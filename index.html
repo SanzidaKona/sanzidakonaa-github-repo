@@ -3,9 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <title>Flower lover</title>
+    <style>
+         * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+ 
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+    .same-gap {
+      max-width: 1200px;
+      margin: auto;
+      padding: 70px 50px;
+    }
+
+    .same-gap-nopadtop {
+      max-width: 1200px;
+      margin: auto;
+      padding: 10px 40px 60px;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo img {
+      height: 60px;
+    }
+
+    .right-section {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .menu li {
+      font-size: 16px;
+      color: #666;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+
+    .menu li:hover {
+      color: #000;
+    }
+
+    .menu li.active {
+      color: #111;
+      font-weight: 600;
+    }
+
+    .cart {
+      font-size: 16px;
+      font-weight: 500;
+      color: #222;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+      }
+
+      .right-section {
+        justify-content: flex-end;
+        flex: 1;
+      }
+    }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./assets/logo.PNG" alt="logo">
+      </div>
+      <div class="right-section">
+        <ul class="menu">
+          <li class="active">Home</li>
+          <li>Shop</li>
+          <li>About us</li>
+        </ul>
+         <div class="cart">
+         <i class="fa-solid fa-cart-shopping"></i>
+        Cart ($56)
+    </nav>
+</div>
 </body>
 </html>
