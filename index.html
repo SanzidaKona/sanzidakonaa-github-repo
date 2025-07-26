@@ -291,7 +291,87 @@
         font-size: 0.95rem;
       }
     }
+    .plant-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 40px;
+      text-align: center;
+    }
 
+    .plant-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .plant-section h2 span {
+      color: rgb(200, 100, 2);
+    }
+
+    .plant-section p {
+      color: #555c70;
+      max-width: 600px;
+      margin: 0 auto 40px;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .plant-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+
+    .plant-card {
+      all: unset;
+      display: block;
+      text-align: center;
+    }
+
+    .plant-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .plant-card h4 {
+      margin: 10px 0 5px;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .plant-card p {
+      font-weight: bold;
+      color: #111;
+      margin-bottom: 10px;
+    }
+
+    .plant-card button {
+      background-color: rgb(200, 100, 2);
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 0.9rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .plant-card button:hover {
+      background-color: #e05d00;
+    }
+
+    @media (max-width: 768px) {
+      .plant-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .plant-grid {
+        grid-template-columns: 1fr;
+      }
+    }
     </style>
 </head>
 <body>
@@ -323,6 +403,64 @@
       </div>
     </section>
   </div>
+  <section class="plant-section">
+    <h2><span>Our</span> Plants</h2>
+    <p>
+      Indulge your senses with the beauty and fragrance of our fresh flower shop. From
+      classic roses to exotic blooms, we offer a wide variety of fresh.
+    </p>
+    <div class="plant-grid">
+      <div class="plant-card">
+        <img src="assets/sample-flower-image.PNG" alt="Lily Blossom" />
+        <h4>Lily Blossom</h4>
+        <p>20 USD</p>
+        <button>ADD TO CART</button>
+      </div>
+      <div class="plant-card">
+        <img src="assets/sample-flower-image.PNG" alt="Lily Blossom" />
+        <h4>Lily Blossom</h4>
+        <p>20 USD</p>
+        <button>ADD TO CART</button>
+      </div>
+      <div class="plant-card">
+        <img src="assets/sample-flower-image.PNG" alt="Lily Blossom" />
+        <h4>Lily Blossom</h4>
+        <p>20 USD</p>
+        <button>ADD TO CART</button>
+      </div>
+      <div class="plant-card">
+        <img src="assets/sample-flower-image.PNG" alt="Lily Blossom" />
+        <h4>Lily Blossom</h4>
+        <p>20 USD</p>
+        <button>ADD TO CART</button>
+      </div>
+      <div class="plant-card">
+        <img src="assets/sample-flower-image.PNG" alt="Lily Blossom" />
+        <h4>Lily Blossom</h4>
+        <p>20 USD</p>
+        <button>ADD TO CART</button>
+      </div>
+      <div class="plant-card">
+        <img src="./assets/sample-flower-image.png" alt="Lily Blossom" />
+        <h4>Lily Blossom</h4>
+        <p>20 USD</p>
+        <button>ADD TO CART</button>
+      </div>
+      <div class="plant-card">
+        <img src="sample-flower-image.PNG" alt="Lily Blossom" />
+        <h4>Lily Blossom</h4>
+        <p>20 USD</p>
+        <button>ADD TO CART</button>
+      </div>
+      <div class="plant-card">
+        <img src="sample-flower-image.PNG" alt="Lily Blossom" />
+        <h4>Lily Blossom</h4>
+        <p>20 USD</p>
+        <button>ADD TO CART</button>
+      </div>
+    </div>
+  </section>
+
 </div>
 </body>
 </html>
