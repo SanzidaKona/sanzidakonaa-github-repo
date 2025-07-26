@@ -372,6 +372,95 @@
         grid-template-columns: 1fr;
       }
     }
+     .flower-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 40px;
+    }
+
+    .flower-container {
+      display: flex;
+      background-color: #ffffff;
+    }
+
+    .image-container {
+      position: relative;
+      flex: 1;
+    }
+
+    .main-image {
+      width: 98%;
+      height: 90%;
+      object-fit: cover;
+    }
+
+    .badge {
+      background: transparent;
+      position: absolute;
+      top: -20%;
+      bottom: 10%;
+      left: 70%;
+      width: 230px;
+      height: auto;
+    }
+
+    .text-container {
+      flex: 1;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .text-container h1 {
+      font-size: 30px;
+      line-height: 1.8;
+    }
+
+    .text-container ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      color: #737373;
+    }
+
+    .text-container li {
+      margin-bottom: 15px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .heading-mobile {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .flower-container {
+        flex-direction: column;
+      }
+
+      .heading-desktop {
+        display: none;
+      }
+
+      .heading-mobile {
+        display: inline;
+      }
+
+      .badge {
+        width: 0px;
+        top: 10px;
+        left: 10px;
+      }
+
+      .text-container {
+        padding: 20px;
+      }
+
+      .text-container li {
+        font-size: 15px;
+      }
+    }
+
     </style>
 </head>
 <body>
@@ -460,7 +549,26 @@
       </div>
     </div>
   </section>
+  <section class="flower-section">
+    <div class="flower-container">
+      <div class="image-container">
+        <img src="./assets/flower-store.png" alt="Flower arrangement" class="main-image">
+        <img src="./assets/trusted-badge.png" alt="Trusted Seller Badge" class="badge">
+      </div>
+      <div class="text-container">
+        <h1>
+          <span class="heading-desktop">Flower & Plants <br>Lover</span>
+          <span class="heading-mobile">Flower & Plants Lover</span>
+        </h1>
+        <ul>
+           <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+          <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+          <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
 
+        </ul>
+      </div>
+    </div>
+  </section>
 </div>
 </body>
 </html>
